@@ -1,0 +1,16 @@
+Spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to MurthyDace cards related QA APIs "
+  contactDetails:
+    name: "Arun - QA Developer"
+    email: "arun@murthydace.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
