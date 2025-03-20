@@ -1,0 +1,29 @@
+package com.udemy.spring.mapper;
+
+import com.udemy.spring.dto.AccountsDto;
+import com.udemy.spring.entity.Accounts;
+
+public class AccountsMapper {
+
+    public static AccountsDto mapToAccountsDto(Accounts accounts, AccountsDto accountsDto) {
+        accountsDto.setAccountNumber(accounts.getAccountNumber());
+        accountsDto.setAccountType(accounts.getAccountType());
+        accountsDto.setBranchAddress(accounts.getBranchAddress());
+        return accountsDto;
+    }
+
+    /**
+     * Maps the properties from an AccountsDto object to an Accounts entity.
+     *
+     * @param accountsDto The source AccountsDto object containing the data.
+     * @param accounts The target Accounts entity to which the data is mapped.
+     * @return The updated Accounts entity with data from the AccountsDto.
+     */
+    public static Accounts mapToAccounts(AccountsDto accountsDto, Accounts accounts) {
+        accounts.setAccountNumber(accountsDto.getAccountNumber());
+        accounts.setAccountType(accountsDto.getAccountType());
+        accounts.setBranchAddress(accountsDto.getBranchAddress());
+        return accounts;
+    }
+
+}
