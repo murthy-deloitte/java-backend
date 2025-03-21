@@ -1,0 +1,16 @@
+Spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to MurthyDace cards related prod APIs "
+  contactDetails:
+    name: "Murthy - Prod Developer"
+    email: "murthy@murthydace.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
