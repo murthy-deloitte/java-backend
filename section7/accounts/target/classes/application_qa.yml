@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to MurthyDace accounts related QA Related APIs "
+  contactDetails:
+    name: "Murthy - QA lead"
+    email: "murthy@eazybank.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
